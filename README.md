@@ -12,8 +12,12 @@ The following steps have to be performed once to setup the project.
 
     Activate your virtual environment  
       python -m venv .venv
-      source .venv/bin/activate   # On Mac/Linux
-      # or .venv\Scripts\activate  # On Windows
+  
+      On Mac:
+      source .venv/bin/activate
+  
+      On Windows:  
+      .venv\Scripts\activate  
 
       pip install -r requirements.txt
 
