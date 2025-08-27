@@ -44,12 +44,10 @@ The following steps have to be performed once to setup the project.
 
         where user is your username and password is your password
 
-
       Activate your virtual environment and cd to the backend directory and run:
 
         python3 createTables.py
-
-      
+ 
       You should see:
         Creating tables in the database...
         Tables created successfully! 
@@ -58,6 +56,7 @@ The following steps have to be performed once to setup the project.
 **3. Environment Variables**
       
       Create a .env file inside the backend directory and add:
+      
    
       DATABASE_URL=postgresql://user:password@localhost/surveydb
 
