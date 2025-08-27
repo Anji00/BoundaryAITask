@@ -41,7 +41,6 @@ The following steps have to be performed once to setup the project.
         GRANT ALL PRIVILEGES ON DATABASE surveydb TO user;
         \q  # To exit
 
-
       where user is your username and password is your password
 
       Activate your virtual environment and cd to the backend directory and run:
@@ -49,19 +48,20 @@ The following steps have to be performed once to setup the project.
         python3 createTables.py
  
       You should see:
+      
         Creating tables in the database...
         Tables created successfully! 
 
 
 **3. Environment Variables**
       
-    Create a .env file inside the backend directory and add:
+      Create a .env file inside the backend directory and add:
       
-      DATABASE_URL=postgresql://user:password@localhost/surveydb
+        DATABASE_URL=postgresql://user:password@localhost/surveydb
+  
+        OPENAI_API_KEY=sk-your-openai-api-key
 
-      OPENAI_API_KEY=sk-your-openai-api-key
-
-  where user is your username, password is your password and sk-your-openai-api-key is your OpenAI API key
+     where user is your username, password is your password and sk-your-openai-api-key is your OpenAI API key
 
 
 ## Running the Application
