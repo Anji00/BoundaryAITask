@@ -7,10 +7,10 @@ The following steps have to be performed once to setup the project.
 1. **Install Dependencies**
 
 * **Backend**
-    Navigate to the project directory on the terminal
+    Navigate to the project directory on the terminal:
       cd backend
 
-    Activate your virtual environment  
+    Activate your virtual environment:  
       python -m venv .venv
   
       On Mac:
@@ -22,15 +22,14 @@ The following steps have to be performed once to setup the project.
       pip install -r requirements.txt
 
 * **Frontend**
-    Navigate to the project directory on the terminal
+    Navigate to the project directory on the terminal:
       cd frontend
       npm install
 
 2. **Initialize Database**
       
-      Create a database
+      Create a database:
         psql -U postgres  # Replace postgres with your admin user if different
-
         CREATE DATABASE surveydb;
         CREATE USER user WITH PASSWORD 'password';
         GRANT ALL PRIVILEGES ON DATABASE surveydb TO user;
@@ -57,14 +56,14 @@ The following steps have to be performed once to setup the project.
 ## Running the Application
 
 * **Backend**
-    Navigate to the project directory on the terminal
+    Navigate to the project directory on the terminal:
       cd backend
 
     Activate your virtual environment and then run:
       uvicorn main:app --reload --port 8000
 
 * **Frontend**
-    Open another terminal window and navigate to the project directory on the terminal
+    Open another terminal window and navigate to the project directory on the terminal:
       cd frontend
       npm start
 
