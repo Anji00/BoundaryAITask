@@ -8,9 +8,11 @@ The following steps have to be performed once to setup the project.
 
 * **Backend**
     Navigate to the project directory on the terminal:
+  
       cd backend
 
     Activate your virtual environment:  
+
       python -m venv .venv
   
       On Mac:
@@ -23,12 +25,14 @@ The following steps have to be performed once to setup the project.
 
 * **Frontend**
     Navigate to the project directory on the terminal:
+  
       cd frontend
       npm install
 
 2. **Initialize Database**
       
       Create a database:
+   
         psql -U postgres  # Replace postgres with your admin user if different
         CREATE DATABASE surveydb;
         CREATE USER user WITH PASSWORD 'password';
@@ -38,15 +42,18 @@ The following steps have to be performed once to setup the project.
         where user is your username and password is your password
 
       Activate your virtual environment and cd to the backend directory and run:
+
         python3 createTables.py
 
       You should see:
+   
         Creating tables in the database...
         Tables created successfully! 
 
 
 2. **Environment Variables**
-      Create a .env file inside the backend directory and add: 
+      Create a .env file inside the backend directory and add:
+   
       DATABASE_URL=postgresql://user:password@localhost/surveydb
       OPENAI_API_KEY=sk-your-openai-api-key
 
@@ -57,13 +64,16 @@ The following steps have to be performed once to setup the project.
 
 * **Backend**
     Navigate to the project directory on the terminal:
+
       cd backend
 
     Activate your virtual environment and then run:
+
       uvicorn main:app --reload --port 8000
 
 * **Frontend**
     Open another terminal window and navigate to the project directory on the terminal:
+
       cd frontend
       npm start
 
