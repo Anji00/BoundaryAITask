@@ -41,7 +41,9 @@ The following steps have to be performed once to setup the project.
         GRANT ALL PRIVILEGES ON DATABASE surveydb TO user;
         \q  # To exit
 
+
         where user is your username and password is your password
+
 
       Activate your virtual environment and cd to the backend directory and run:
 
